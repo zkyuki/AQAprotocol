@@ -1,54 +1,70 @@
-# recommendation
+# Getting Started with Create React App
 
-## How to Use the Flask Application
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This Flask application can automatically categorize text submitted from a web browser into category tags using the OpenAI API, and save them to a SQLite database. You can then display a list of posts that include the saved text and related category tags.
+## Available Scripts
 
-Below are the steps to run this application.
+In the project directory, you can run:
 
-### Requirements
+### `npm start`
 
-- Python 3.x
-- Flask
-- OpenAI API account (API key required)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Installation
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1. Install Python 3.x.
+### `npm test`
 
-2. Install Flask. In the terminal, run the following command:
-```
-pip install flask
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-3. Create an OpenAI API account and obtain an API key.
+### `npm run build`
 
-### Running the Application
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Navigate to the directory containing the application.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-2. To create the SQLite database, run the `create_tables()` function before running the application. Run the following command:
-```
-python
-from app import create_tables
-create_tables()
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-3. To run the Flask application, run the following command:
-```
-export FLASK_APP=app
-export FLASK_ENV=development
-flask run
-```
+### `npm run eject`
 
-4. Open a web browser and enter a URL like `http://localhost:5000/`. The index page of the application will be displayed.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Using the Application
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. A text box will be displayed for entering the post content. Enter the post content in the text box.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-2. Click the "Post" button to save the post. The application will automatically categorize the post content into category tags using the OpenAI API and save them to the SQLite database.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-3. After the post is saved, you will be redirected to the index page. This will display a list of all posts and their associated category tags.
+## Learn More
 
-That's it. For more detailed instructions on how to use the Flask application, see the `app.py` file.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
