@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Categorization</title>
+</head>
+<body>
+    <h1>Post Categorization</h1>
+    <form action="{{ url_for('index') }}" method="post">
+        <label for="post_content">Post content:</label>
+        <br>
+        <textarea id="post_content" name="post_content" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>All Posts</h2>
+    <ul>
+        {% for post in posts_with_categories %}
+            <li>
+                <strong>Content:</strong> {{ post[1] }}<br>
+                <strong>Categories:</strong> {{ post[2] }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
